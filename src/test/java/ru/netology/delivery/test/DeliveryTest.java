@@ -17,7 +17,7 @@ class DeliveryTest {
 
     @BeforeEach
     void setup() {
-        open("http://localhost:7777");
+        open("http://localhost9999");
     }
 
     @BeforeAll
@@ -32,7 +32,7 @@ class DeliveryTest {
 
         @Test
         @DisplayName("Should successful plan and ChangePlan meeting")
-        void shouldSuccessfulPlanAndReplanMeeting () {
+        void shouldSuccessfulPlanAndChangePlanMeeting () {
             DataGenerator DateGenerator = null;
             var validUser = DataGenerator.Registration.generateUser("ru");
             var daysToAddForFirstMeeting = 4;
