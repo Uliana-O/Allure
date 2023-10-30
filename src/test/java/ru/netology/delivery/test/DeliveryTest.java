@@ -9,9 +9,10 @@ import ru.netology.delivery.data.DataGenerator;
 
 import java.time.Duration;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.withText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 class DeliveryTest {
 
@@ -32,7 +33,7 @@ class DeliveryTest {
 
         @Test
         @DisplayName("Should successful plan and ChangePlan meeting")
-        void shouldSuccessfulPlanAndChangePlanMeeting () {
+        void shouldSuccessfulPlanAndChangeReplanMeeting () {
             DataGenerator DateGenerator = null;
             var validUser = DataGenerator.Registration.generateUser("ru");
             var daysToAddForFirstMeeting = 4;
