@@ -18,7 +18,7 @@ class DeliveryTest {
 
     @BeforeEach
     void setup() {
-        open("http://localhost9999");
+        open("http://localhost:9999");
     }
 
     @BeforeAll
